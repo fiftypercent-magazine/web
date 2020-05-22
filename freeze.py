@@ -3,5 +3,7 @@ from app import app
 
 freezer = Freezer(app)
 
+FREEZER_RELATIVE_URLS = True
+
 if __name__ == '__main__':
     freezer.freeze()

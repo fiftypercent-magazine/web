@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+}
+
+body {
+    position: relative;
+    font-size: 14px;
+    background: red;
+}
+
+a:link {
+  color: black;
+}
+
+p a:hover {
+  background-color: green;
+}
+
+h3 {
+    display: inline-block;
+}
+
+footer {
+    padding: 3px;
+    margin-bottom: 2px;
+}
+
+.site-body {
+	position: relative;
+    z-index: 1;
+}
+
+.background {
+    -ms-transform-origin: 0% 0%;		/* IE 9 */
+    -webkit-transform-origin: 0% 0%;	/* Chrome, Safari, Opera */
+    transform-origin: 0% 0%;			/* GLI ALTRI */
+}
+
+.background .bg-container {
+	position: relative;
+}
+
+.background .bg-container img{
+	width: 100%;
+	display: block;
+	z-index: 1
+}
+
+.icon {
+    position: absolute;
+}
+
+.text-box{
+    position: relative;
+    float: center;
+    padding: 6px;
+    margin: 20px;
+    text-align: center;
+}
+
+.history-box {
+    position: relative;
+    padding: 6px;
+    border: 1px solid blue;
+    width: 40%;
+    align: right; 
+}
+
+.header-line {
+    width: 60%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    animation: colorChange 4s;
+}
+
+
+/********** Action    ***********/
+
+/********** Animation ***********/
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: .35;
+    }
+ 
+    50% {
+        opacity: .5;
+    }
+ 
+    75% {
+        opacity: .75;
+    }
+ 
+    100% {
+        opacity: .25;
+    }
+}
+
+@keyframes blink {
+    from {opacity: 0;}
+    to {opacity: .9}
+}
+
+@keyframes colorChange {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}

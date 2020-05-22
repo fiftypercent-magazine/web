@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+  
+<div id="site-body" class="site-body" height="1900px">
+
+    <div id="icon001" class="icon" 
+     style="width: 250px; height: 50px; top: 55px; left: 850px; z-index: 1154; animation: fadeIn 5s infinite linear;">
+      <a type="cover" href="{{ url_for("about") }}" target="_self">
+        <img src="/static/media/bitmap_logo.svg" alt="" style="width: 100%;">
+      </a>
+    </div>
+    <div id="icon002" class="icon" 
+     style="width: 474px; height: 598px; top: 373px; left: 266px; z-index: 1153; animation: blink 8s infinite linear;">
+        <img src="/static/media/fiftypercent-quote-01.gif" alt="" style="width: 100%;">
+    </div>
+    <div id="icon003" class="icon" 
+	 style="width: 103px; height: 113px; top: 1790px; left: 880px; z-index: 1152; opacity: .8; animation: spin 5s infinite linear;">
+      <img src="/static/media/mainToabout-icon.svg" alt="" style="width: 100%;">
+    </div>
+    <div id="icon004" class="icon" 
+	 style="width: 495px; height: 741px; top: 1800.425px; left: 750px; z-index: 1151; opacity: .8;">
+        
+        <h4>Coming soon...</h4>
+    </div>
+
+    <!-- Background -->
+    <div class="background">
+	<div class="bg-container">
+	  <img src="/static/media/fiftypercent-bg-001.jpg" alt="">
+	</div>
+	
+  <div class="bg-container">
+	  <img src="/static/media/bg_no4.jpg" alt="">
+	</div>
+  </div>
+
+<footer>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+</footer>
+{% endblock %}
