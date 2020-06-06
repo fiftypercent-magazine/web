@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div id="page-body" class="site-body">
+  <div id="about-icon" class="icon" style="width: 93px; height: 87px; top: 30px; left: 70px; z-index: 1154; animation: spin 7s infinite linear;">
+    <a type="cover" href="{{ url_for("index") }}" target="_self">
+      <img  src="/static/media/about-icon.svg" alt="Home" width="100%;">
+    </a>
+  </div>
+  
+  <div class="text-box">
+    <h2>{{ context.title }}</h2>
+  </div>
+  <div class="header-line"></div>
+  <br>
+  <div id="page-cover" class="page-box">
+      <img src="{{ context.urls[0] }}" alt="">
+  </div>
+  <div class="page-container" >
+    {% for url in context.urls[1:] %}
+      <div class="page-box">
+        <img class="lazyload" data-src="{{ url }}" alt="FIFTY PERCENT" />
+      </div>
+    {% endfor %}
+  </div>
+
+  <center><footer>
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+      <img alt="Creative Commons License" style="border-width:0" 
+      src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" />
+  This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+  </footer></center>
+</div> 
+
+{% endblock %}

@@ -86,10 +86,13 @@ footer {
     animation: colorChange 4s;
 }
 
+.page-container {
+}
+
 .page-box {
     position: relative;
     width: 100%;
-    padding-bottom: 72.3%;
+    padding-bottom: 74.3%;
 }
 
 .page-box img {
