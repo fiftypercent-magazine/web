@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+# Environments
+*Env/
+.env
+.venv
+
+# Test
+.cache
+.pytest_cache/
+
+# Vim
+*~
+*.swp
+*.swo
+
+# Mac/OSX
+.DS_Store
