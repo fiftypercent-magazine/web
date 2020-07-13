@@ -13,6 +13,5 @@ def page():
     for issue in range(1, issues):
         yield {'issue_no': issue}
 
-
 if __name__ == '__main__':
     freezer.freeze()

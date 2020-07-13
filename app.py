@@ -12,10 +12,11 @@ def index():
 def about():
     return render_template('about.html')
 
-
 @app.route('/issue<issue_no>.html')
 def page(issue_no):
     context = Page(issue_no).getContext()
+    print(issue_no)
+    print('[DEBUG] page ', context)
     context['title'] = 'FiftyPercent - No.' + issue_no
     # toggler icon
     return render_template('page.html', context=context)

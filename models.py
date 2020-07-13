@@ -5,7 +5,7 @@ DATA_JSON = 'static/media/page_link.json'
 
 class Page:
     def __init__(self, issue_no=1):
-        self.issue = issue_no 
+        self.issue = str(issue_no) 
 
     def __repr__(self):
         return 'fp_{}'.format(self.issue)
@@ -15,7 +15,7 @@ class Page:
         try:
             context = data[self.issue]
         except KeyError:
-            context = {'issue_not_found': 'url_not_found'}
+            context = {'urls': ''}
         return context
 
     def all(self):
